@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kasmart" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. --><!-- Warna utama -->
+        <item name="colorPrimary">#226CFF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="drawableColor">#000000</item>
+        <item name="headerColor">#084376</item>
+        <!-- Warna tombol default -->
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+
+</resources>

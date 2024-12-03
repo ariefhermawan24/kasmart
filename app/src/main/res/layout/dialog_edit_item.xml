@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Edit"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Nama Barang -->
+                <EditText
+                    android:id="@+id/edit_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:hint="item_name"
+                    android:drawableStart="@drawable/box_name"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <!-- Harga Beli -->
+                <EditText
+                    android:id="@+id/edit_initial_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:hint="harga beli"
+                    android:drawableStart="@drawable/cart_buy"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <!-- Harga Jual -->
+                <EditText
+                    android:id="@+id/edit_sale_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:hint="harga jual"
+                    android:drawableStart="@drawable/sell"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <!-- Stok -->
+                <EditText
+                    android:id="@+id/edit_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:hint="stok"
+                    android:drawableStart="@drawable/stock"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_margin="10dp">
+
+                    <Button
+                        android:id="@+id/reset"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#504B4B"
+                        android:text="Reset"
+                        android:textColor="@color/white"
+                        app:cornerRadius="8dp"
+                        app:icon="@drawable/reset" />
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Simpan"
+                        android:backgroundTint="#0A710E"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="8dp"
+                        app:icon="@drawable/save"
+                        app:cornerRadius="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

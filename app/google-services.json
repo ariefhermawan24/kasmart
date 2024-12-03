@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525068545815",
+    "project_id": "kasmart-projek",
+    "storage_bucket": "kasmart-projek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525068545815:android:f82ab86f79b0131b465152",
+        "android_client_info": {
+          "package_name": "com.mariefhermawan.kasmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBULcXIW2hhvEP-6ywjM9n2FP-jG665BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

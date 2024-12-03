@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inventory">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="8dp"
+                android:hint="Cari barang"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:lines="1"/>
+
+            <Button
+                android:id="@+id/filter"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableBottom="@drawable/filter" />
+
+        </LinearLayout>
+
+        <!-- Empty inventory message -->
+        <TextView
+            android:id="@+id/empty_inventory_message"
+            android:layout_width="296dp"
+            android:layout_height="146dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Inventory masih kosong, silahkan tambahkan barang terlebih dahulu"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="80dp" />
+
+    </RelativeLayout>
+
+    <!-- Button untuk menambah barang -->
+    <Button
+        android:id="@+id/btn_add_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#084376"
+        android:padding="8dp"
+        android:text="Tambah Barang"
+        android:textColor="#FFFFFF"
+        app:icon="@drawable/add"/>
+
+</FrameLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <attr name="drawableColor" format="color" />
+    <attr name="headerColor" format="color" />
+</resources>

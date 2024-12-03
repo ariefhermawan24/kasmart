@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_text_penghutang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/hutang"
+        android:hint="Nama Penghutang"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+</LinearLayout>

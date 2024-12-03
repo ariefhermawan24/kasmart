@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- Empty inventory message -->
+        <TextView
+            android:id="@+id/empty_inventory_message"
+            android:layout_width="296dp"
+            android:layout_height="146dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Stok barang kosong atau belum tersedia. Silakan periksa inventory untuk informasi lebih lanjut"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/produk_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="190dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp">
+
+        <!-- Total Harga -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:padding="16dp"
+            android:background="?attr/colorPrimary"
+            android:layout_marginBottom="5dp"
+            app:cornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/totalTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/totalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp0"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Tombol di bawah Total untuk Hutang dan Pembayaran Selesai -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="32dp">
+
+            <!-- Tombol Hutang -->
+            <Button
+                android:id="@+id/buttonHutang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DE1515"
+                android:text="Hutang"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/add_hutang"/>
+
+            <!-- Tombol Pembayaran Selesai -->
+            <Button
+                android:id="@+id/buttonPembayaranSelesai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="membayar"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:backgroundTint="#1539C3"
+                android:textSize="16sp"
+                app:icon="@drawable/payment_done"
+                app:cornerRadius="0dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

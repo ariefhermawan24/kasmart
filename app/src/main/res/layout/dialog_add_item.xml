@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Barang"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Nama Barang -->
+            <EditText
+                android:id="@+id/edtItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Nama Barang"
+                android:drawableStart="@drawable/box_name"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- Kategori -->
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <!-- Harga Awal -->
+            <EditText
+                android:id="@+id/edtInitialPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/cart_buy"
+                android:hint="Harga Beli"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <!-- Harga Jual -->
+            <EditText
+                android:id="@+id/edtSalePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/sell"
+                android:hint="Harga Jual"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <!-- Stock -->
+            <EditText
+                android:id="@+id/edtStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/stock"
+                android:hint="Stock"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
